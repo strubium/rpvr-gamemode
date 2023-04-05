@@ -1,0 +1,39 @@
+"rpvr"
+{
+	"base"		"base"
+	"title"		"RP VR"
+	"maps"		"^rpvr_"
+	"category"	"rp"
+	"menusystem"	"1"
+
+	"settings"
+	{
+		1
+		{
+			"name"		"rpvr_zrate"
+			"text"		"Zombie spawn rate"
+			"help"		"Zombie spawn rate"
+			"type"		"Numeric"
+			"default"	"20"
+		}
+
+		2
+		{
+			"name"		"rpvr_zhear"
+			"text"		"Zombie hearing distance"
+			"help"		"How far a zombie can hear player made sounds"
+			"type"		"Numeric"
+			"default"	"15"
+		}
+
+		
+		3
+		{
+			"name"		"rpvr_zrate"
+			"text"		"Do day/night cycle"
+			"help"		"If enabled then days progress"
+			"type"		"CheckBox"
+			"default"	"1"
+		}
+	}
+}

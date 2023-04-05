@@ -1,0 +1,1 @@
+RunConsoleCommand("atmos_enabled", "1")
