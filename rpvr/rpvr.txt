@@ -12,7 +12,7 @@
 		{
 			"name"		"rpvr_zrate"
 			"text"		"Zombie spawn rate"
-			"help"		"Zombie spawn rate"
+			"help"		"The rate that more zombies spawn durning night. Higher is slower"
 			"type"		"Numeric"
 			"default"	"20"
 		}
