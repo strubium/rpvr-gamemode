@@ -38,7 +38,7 @@ function ENT:Initialize()
     BaseClass.Initialize(self)
     
     -- Set the model of the zombie to headcrab zombie
-    self:SetModel("models/headcrab.mdl")
+    self:SetModel("models/Zombie/Classic.mdl")
     
     -- Hook into the sound detection system to make the zombies attack any player they hear
     hook.Add("EntityEmitSound", "OnSoundHeard", OnSoundHeard)
