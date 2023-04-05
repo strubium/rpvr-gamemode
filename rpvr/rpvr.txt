@@ -54,5 +54,21 @@
 			"type"		"Numeric"
 			"default"	"2500"
 		}
+		6
+		{
+			"name"		"rpvr_zombie_damage"
+			"text"		"The damage dealt by zombies to players."
+			"help"		"The damage dealt by zombies to players. Max 100"
+			"type"		"Numeric"
+			"default"	"10"
+		}
+		7
+		{
+			"name"		"rpvr_max_zombies"
+			"text"		"The max number of zombies that will be spawned durning night"
+			"help"		"The max number of zombies that will be spawned durning night. Helps reduce lag"
+			"type"		"Numeric"
+			"default"	"10000"
+		}
 	}
 }
