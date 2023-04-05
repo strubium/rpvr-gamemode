@@ -12,3 +12,12 @@ I may have gotten over my head by imagining a super smart nextbot but he it goes
 * Zombies spawn during the night
 * During the day, they retreat to a "hiding spot" not by the player and only if they are really close
 * When it is night, any player made noises can lure zombies to the players location, where they will attack. 
+
+## Current Convars
+<code>rpvr_zrate</code>
+<code>rpvr_zhear</code>
+<code>rpvr_dncycle</code>
+<code>rpvr_drate</code>
+<code>rpvr_nrate</code>
+<code>rpvr_zombie_damage</code>
+<code>rpvr_max_zombies</code>
