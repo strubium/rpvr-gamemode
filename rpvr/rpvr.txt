@@ -2,9 +2,12 @@
 {
 	"base"		"base"
 	"title"		"RP VR"
+	"info"		"Hide from the zombies that hear your every move"
+	"version"	"0.0.1"
 	"maps"		"^rpvr_"
 	"category"	"rp"
 	"menusystem"	"1"
+	"author_name"	"Strubium"
 
 	"settings"
 	{
@@ -29,11 +32,27 @@
 		
 		3
 		{
-			"name"		"rpvr_zrate"
+			"name"		"rpvr_dncycle"
 			"text"		"Do day/night cycle"
-			"help"		"If enabled then days progress"
+			"help"		"If enabled then times progresses"
 			"type"		"CheckBox"
 			"default"	"1"
+		}
+		4
+		{
+			"name"		"rpvr_drate"
+			"text"		"How fast days progress"
+			"help"		"Controls how long the days is"
+			"type"		"Numeric"
+			"default"	"3000"
+		}
+		5
+		{
+			"name"		"rpvr_nrate"
+			"text"		"How fast nights progress"
+			"help"		"Controls how long the night is"
+			"type"		"Numeric"
+			"default"	"2500"
 		}
 	}
 }
