@@ -10,7 +10,10 @@ include("npc.lua")
 include("weather.lua")
 
 function GetZrate()
-    local zrate = GetConVar("rpvr_zrate")
-    if zrate > 20 then error( "[INFORMATION] rpvr_zrate works!!" )
+    local zrate = GetConVar("rpvr_zrate"):GetInt()
+    if zrate == 0 then
+        error("[ERROR] rpvr_zrate is zero!")
+    elseif zrate > 20 then
+        print("[INFORMATION] rpvr_zrate works!")
     end
 end
