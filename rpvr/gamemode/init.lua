@@ -9,8 +9,7 @@ include("npc.lua")
 include("weather.lua")
 
 function GetZrate()
-    local rpvr_zrate = GetConVar("rpvr_zrate")
-    if rpvr_zrate > 20 then
-        print("wowe")
+    local zrate = GetConVar("rpvr_zrate")
+    if zrate > 20 then error( "[INFORMATION] rpvr_zrate works!!" )
     end
 end
