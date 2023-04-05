@@ -32,14 +32,14 @@ local function SpawnZombie(pos)
     npc:Spawn()
 end
 
--- Define the Initialize function to set the zombie's model and hook into the sound detection system
+-- Define the Initialize function to set the zombie's model and spawn more zombies over time
 function ENT:Initialize()
     -- Call the base class's Initialize function
     BaseClass.Initialize(self)
     
     -- Set the model of the zombie to headcrab zombie
     self:SetModel("models/headcrab.mdl")
-
+    
     -- Hook into the sound detection system to make the zombies attack any player they hear
     hook.Add("EntityEmitSound", "OnSoundHeard", OnSoundHeard)
 
@@ -55,5 +55,13 @@ function ENT:Initialize()
     for _, pos in ipairs(spawnPositions) do
         SpawnZombie(pos)
     end
+    
+    -- Spawn more zombies over time
+    timer.Create("SpawnMoreZombies", 10, 0, function()
+        for _, pos in ipairs(spawnPositions) do
+            SpawnZombie(pos)
+        end
+    end)
 end
+
 
