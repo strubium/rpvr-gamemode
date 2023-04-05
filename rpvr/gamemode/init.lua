@@ -3,6 +3,7 @@ math.randomseed(os.time())
 AddCSLuaFile( "cl_init.lua" )
 AddCSLuaFile( "shared.lua" )
 AddCSLuaFile( "npc.lua" )
+AddCSLuaFile( "weather.lua" )
 
 include("shared.lua")
 include("npc.lua")
