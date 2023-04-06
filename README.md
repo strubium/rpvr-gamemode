@@ -28,3 +28,8 @@ I may have gotten over my head by imagining a super smart nextbot but he it goes
 <code>rpvr_zombie_damage</code> Controls the damage of zombies againist players
 
 <code>rpvr_max_zombies</code> Controls how many zombies will be spawned durning the night
+
+## Bugs
+* Zombies spawn under the map where ground isnt completly flat
+* Zombies spawn inside walls 
+* zombies will not spawn on second floors and so on
