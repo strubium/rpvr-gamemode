@@ -33,3 +33,13 @@ I may have gotten over my head by imagining a super smart nextbot but he it goes
 * Zombies spawn under the map where ground isnt completly flat
 * Zombies spawn inside walls 
 * zombies will not spawn on second floors and so on
+
+Fix? 
+-- Find a random walkable point
+local navmesh = navmesh.Find(Vector(0, 0, 0), 500, 100, 50)
+local randomPoint = navmesh:GetRandomPoint()
+
+-- Spawn the npc_fastzombie at the random point
+local zombie = ents.Create("npc_fastzombie")
+zombie:SetPos(randomPoint)
+zombie:Spawn()
